@@ -311,6 +311,7 @@ section{
   display: grid;
   place-content: center;
   height: 1000px;
+  width: 100%;
 }
 
 
@@ -427,7 +428,7 @@ section{
 .politic-download-container a{
   display: grid;
   place-content: center;
-  background-color: #0400ff;
+  background-color: #082C94;
   color: white;
   height: 100px;
   width: 250px;
@@ -438,161 +439,50 @@ section{
 }
 
 .politic-download-container a:hover{
-  background-color: #082C94;
+  background-color: #0400ff;
 }
 
+@media (max-width: 868px){
 
+  .title-container-rekrutacja{
+    font-size: 18px;
+  }
 
-
-
-
-
-
-/* FOOTER STYLES */
-
-footer{
+  .full-step-container{
     width: 100%;
-    text-align: center;
-    background-color: #082C94;
   }
-  
-  footer a:hover{
-    color: #888;
-  }
-  
-  .footer-blue-belt-container{
-      width: 100%;
-      height: 4px;
-      display: flex;
-      justify-content: center;    
-  }
-  
-  .footer-blue-belt{
-      background-color: #082C94;
-      width: 80%;
-      height: 100%;
-  }
-  
-  .footer-container{
-    display: flex;
-    justify-content: space-evenly;
+
+  .full-step-elements{
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    padding: 18px;
   }
-  
-  footer h6{
-    color: white;
-    font-weight: bold;
-    font-size: 22px;
+
+  .full-step-title-container{
+    font-size: 20px;
   }
-  
-  .footer-container-left a{
-    color: white;
-    transition: all .3s ease-in-out;
-  }
-  
-  
-  .footer-container-left li{
-    margin: 10px;
-  }
-  
-  .footer-container-center img{
-    width: 150px;
-    height: 170px;
-  }
-  
-  .footer-container-right li{
+
+  .about-step{
+    font-size: 12px;
+    width: 100%;
     margin: 12px;
-    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
   }
-  
-  .footer-container-right li a{
-    color: white;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    transition: all .2s ease-in;
-  }
-  
-  .footer-container-right li a:hover{
-    color: #888;
-  }
-  
-  .footer-container-right img{
-    width: 24px;
-    height: 24px;
-    margin: 2px;
-  }
-  
-  footer hr{
-    height: 4px;
-    background-color: #ffffff;
-  }
-  
-  .creator{
-    width: 100%;
-    display: flex;
+
+  .politic-download-container{
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  
-  .creator a{
-    color: white;
-    transition: all .2s ease-in;
+
+  .politic-download-container a{
+    width: 200px;
+    font-size: 16px;
   }
-  
-  .blue-belt-contact{
-    height: 5px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .belt-contact{
-    width: 90%;
-    height: 5px;
-    background-color: #082C94;
-  }
-  
-  .mobile-off{
+
+  .line-container{
     display: none;
   }
-  @media(max-width: 868px){
-  
-    footer{
-      background-color: #ffffff;
-      color: #000000;
-    }
-  
-    .footer-container{
-      display: flex;
-      flex-direction: column;
-    }
-  
-    footer h6,
-    .footer-container-left a,
-    .footer-container-right li a{
-      color: #000000;
-      font-weight: 200;
-    }
-  
-    .footer-container-left ul, .footer-container-right ul{
-      padding: 0;
-    }
-  
-    .footer-container-right ul{
-      display: grid;
-      place-content: center;
-    }
-  
-    .blue-belt-footer-container{
-      justify-content: center;
-      display: flex;
-    }
-  
-    .blue-belt-footer{
-      width: 80%;
-    }
-  }
-  
+}
+
